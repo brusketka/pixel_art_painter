@@ -11,6 +11,8 @@ let heightInput = document.getElementById("height");
 let draw = false;
 let erase = false;
 
+
+
 makeGridButton.addEventListener("click", ()=> {
     fieldContainer.innerHTML = "";
     let count = 0;
