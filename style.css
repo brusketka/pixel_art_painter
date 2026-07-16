@@ -47,7 +47,6 @@ button {
 .field {
     margin: 2%;
     width: 96%;
-    min-height: 100px;
     border: 1px solid #ac5942;
     border-radius: 2px;
 
@@ -69,9 +68,12 @@ input[type="color"]::-webkit-color-swatch {
 input[type="color"]::-moz-color-swatch {
     border-radius: 8px;
 }
+:root{
+    --cell-size: 1em;
+}
 .grid-col{
-    width: 1em;
-    height: 1em;
+    width: var(--cell-size);
+    height: var(--cell-size);
     border: 1px solid #ddd;
 }
 .grid-row{

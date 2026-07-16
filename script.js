@@ -12,10 +12,12 @@ let draw = false;
 let erase = false;
 
 
-
 makeGridButton.addEventListener("click", ()=> {
     fieldContainer.innerHTML = "";
     let count = 0;
+    let fieldWidth = fieldContainer.clientWidth;
+    let cellSize = fieldWidth / heightInput.valueAsNumber;
+    document.documentElement.style.setProperty("--cell-size", `${cellSize}px`);
     for (let i = 0; i < widthInput.valueAsNumber; i++){
         let row = document.createElement("div");
         row.classList.add("grid-row");
