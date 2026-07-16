@@ -43,6 +43,9 @@ button {
     padding: 5px;
     width: 200px;
 }
+#paint {
+    background-color: #ac5942;
+}
 
 .field {
     margin: 2%;

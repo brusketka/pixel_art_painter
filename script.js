@@ -69,7 +69,11 @@ clearFieldButton.addEventListener("click", ()=>{
 })
 eraseButton.addEventListener("click", ()=>{
     erase = true;
+    eraseButton.style.backgroundColor = "#AC5942";
+    paintButton.style.backgroundColor = "#E27D60"
 });
 paintButton.addEventListener("click", ()=>{
     erase = false;
+    paintButton.style.backgroundColor = "#AC5942";
+    eraseButton.style.backgroundColor = "#E27D60"
 })
