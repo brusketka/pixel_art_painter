@@ -4,6 +4,7 @@ let clearFieldButton = document.getElementById("clear-button");
 let eraseButton = document.getElementById("erase");
 let paintButton = document.getElementById("paint");
 let colorField = document.getElementById("color");
+let borderButton = document.getElementById("border-button")
 
 let widthInput = document.getElementById("width");
 let heightInput = document.getElementById("height");
@@ -76,4 +77,12 @@ paintButton.addEventListener("click", ()=>{
     erase = false;
     paintButton.style.backgroundColor = "#AC5942";
     eraseButton.style.backgroundColor = "#E27D60"
+});
+borderButton.addEventListener("change", (event)=>{
+    if (event.target.checked){
+        document.documentElement.style.setProperty("--border-size", "1px")
+    }
+    else{
+        document.documentElement.style.setProperty("--border-size", "0px")
+    }
 })
